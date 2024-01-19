@@ -5,5 +5,5 @@ CREATE TABLE earthquakes (
   longitude real,
   quakedepth real,
   id text,
-  quakestatus text,
+  quakestatus text
 );
