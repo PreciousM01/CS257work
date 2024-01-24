@@ -1,3 +1,5 @@
+import psycopg2
+
 def test_query_one():
   conn = psycopg2.connect(
     host="localhost",
