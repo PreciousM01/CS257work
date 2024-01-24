@@ -1,12 +1,12 @@
 import psycopg2
 
-def test_query_one():
+def create_tables():
   conn = psycopg2.connect(
     host="localhost",
     port=5432,
     database="feutsopm",
     user="feutsopm",
-    password="Iwillreachthestars")
+    password="java255expo")
 
 cur = conn.cursor()
 sql = "CREATE TABLE states ( state text, abbreviation text);"
