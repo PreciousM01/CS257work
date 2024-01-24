@@ -31,3 +31,10 @@ def create_tables():
   row = cur.fetchone()
   conn.commit()
   return row
+
+def main():
+    test_connection()
+    create_tables()
+    
+ if __name__ =="__main__"
+    main()
