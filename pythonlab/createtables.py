@@ -8,10 +8,10 @@ def create_tables():
     user="feutsopm",
     password="java255expo")
 
-cur = conn.cursor()
-sql = "CREATE TABLE states ( state text, abbreviation text);"
-sql = "CREATE TABLE cities ( city text, state text, population real, lat real, lon real);"
-cur.execute( sql )
-row = cur.fetchone()
-conn.commit()
+  cur = conn.cursor()
+  sql = "CREATE TABLE states ( state text, abbreviation text);"
+  sql = "CREATE TABLE cities ( city text, state text, population real, lat real, lon real);"
+  cur.execute( sql )
+  row = cur.fetchone()
+  conn.commit()
 return row
