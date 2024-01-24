@@ -2,9 +2,9 @@ def test_query_one():
   conn = psycopg2.connect(
     host="localhost",
     port=5432,
-    database="mlepinski",
-    user="PreciousM01",
-    password="Moonlovers28.")
+    database="feutsopm",
+    user="feutsopm",
+    password="Iwillreachthestars")
 
 cur = conn.cursor()
 sql = "CREATE TABLE states ( state text, abbreviation text);"
