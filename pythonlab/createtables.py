@@ -30,7 +30,6 @@ def create_tables():
   sql = "CREATE TABLE cities ( city text, state text, population real, lat real, lon real);"
   cur.execute( sql )
   conn.commit()
-  return row
 
 def main():
     test_connection()
