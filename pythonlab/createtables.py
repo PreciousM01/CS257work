@@ -36,5 +36,5 @@ def main():
     test_connection()
     create_tables()
     
- if __name__ =="__main__":
+if __name__ =="__main__":
     main()
