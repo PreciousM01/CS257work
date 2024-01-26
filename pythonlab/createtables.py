@@ -26,9 +26,9 @@ def create_tables():
 
   cur = conn.cursor()
   sql = "CREATE TABLE states ( state text, abbreviation text);"
+  cur.execute( sql)
   sql = "CREATE TABLE cities ( city text, state text, population real, lat real, lon real);"
   cur.execute( sql )
-  row = cur.fetchone()
   conn.commit()
   return row
 
