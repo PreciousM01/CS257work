@@ -22,7 +22,7 @@ def main():
     latitude, longitude = location
     print(f'The location of {city_name} is latitude: {latitude} and longitude: {longitude}')
   else:
-    print("{city_name} is not found in the database")
+    print(f'{city_name} is not found in the database')
     
 if __name__ =="__main__":
     main()
