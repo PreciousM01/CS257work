@@ -17,7 +17,7 @@ def get_location():
   return result or False
   
 def main():
-    location = get_location()
+  location = get_location()
   if location:
     latitude, longitude = location
     print(f'The location of {city_name} is latitude: {latitude} and longitude: {longitude}')
