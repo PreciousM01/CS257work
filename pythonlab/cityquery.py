@@ -9,6 +9,7 @@ def get_location():
     password="java255expo")
 
   curr = conn.cursor()
+  city_name = 'northfield'
   curr.execute("SELECT lat, lon FROM cities WHERE city = %s", (city_name,))
   result = curr.fetchone()
   conn.commit()
