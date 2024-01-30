@@ -17,6 +17,7 @@ def get_location():
   return result or False
   
 def main():
+  city_name = 'northfield'
   location = get_location()
   if location:
     latitude, longitude = location
