@@ -15,16 +15,14 @@ def get_location():
   conn.commit()
   conn.close()
   return result or False
-
-  location = get_location()
+  
+def main():
+    location = get_location()
   if location:
     latitude, longitude = location
     print(f'The location of {city_name} is latitude: {latitude} and longitude: {longitude}')
   else:
     print("{city_name} is not found in the database")
-  
-def main():
-    get_location()
     
 if __name__ =="__main__":
     main()
