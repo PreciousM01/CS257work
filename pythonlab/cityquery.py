@@ -10,8 +10,8 @@ def get_location():
 
   curr = conn.cursor()
   city_name = 'northfield'
-  curr.execute("SELECT lat, lon FROM cities WHERE city = ?",(city_name,))
-  result = cur.fetchone()
+  curr.execute("SELECT lat, lon FROM cities WHERE city = ?", (city_name,))
+  result = curr.fetchone()
   conn.commit()
   conn.close()
   return result or False
