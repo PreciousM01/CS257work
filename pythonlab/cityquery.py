@@ -74,18 +74,18 @@ def get_extreme_cities():
   for city in cities:
     name, latitude, longitude = city
     if furthest_west == None or longitude < furthest_west[1]:
-      further_west = (name, longitude)
-    if further_east == None or longitude > further_east[1]:
-      further_east = (name, longitude)
-    if further_north == None or latitude > further_north[1]:
-      further_north = (name, latitude)
-    if further_south == None or latitude < further_south[1]:
-      further_south = (name, latitude)
+      furthest_west = (name, longitude)
+    if furthest_east == None or longitude > furthest_east[1]:
+      furthest_east = (name, longitude)
+    if furthest_north == None or latitude > furthest_north[1]:
+      furthest_north = (name, latitude)
+    if furthest_south == None or latitude < furthest_south[1]:
+      furthest_south = (name, latitude)
 
-  print("The city furthest to the West is:", further_west)
-  print("The city furthest to the East is:", further_east)
-  print("The city furthest to the North is:", further_north)
-  print("The city furthest to the South is:", further_south)
+  print("The city furthest to the West is:", furthest_west)
+  print("The city furthest to the East is:", furthest_east)
+  print("The city furthest to the North is:", furthest_north)
+  print("The city furthest to the South is:", furthest_south)
   
   conn.commit()
   conn.close
