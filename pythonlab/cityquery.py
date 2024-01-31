@@ -27,15 +27,35 @@ def largest_pop():
   curr = conn.cursor()
   curr.execute("SELECT city FROM cities ORDER BY population DESC LIMIT 1")
   result = curr.fetchone()
-  if(result):
+  if result:
     largest_city = result[0]
     print("The city with the largest population is:", largest_city)
     
   conn.commit()
   conn.close()
+
+def smallest_sate_city():
+  conn = psycopg2.connect(
+    host="localhost",
+    port=5432,
+    database="feutsopm",
+    user="feutsopm",
+    password="java255expo")
+
+  curr = conn.cursor()
+  fstate = 'Minnesota'
+  curr.execute("SELECT city FROM cities WHERE state= %s ORDER BY population ASC LIMIT 1", (fstate,))
+  result = curr.fetchone()
+  smallest_statecity = result[0]
+  if result:
+    print("The city with the smallest population in Minnesota is: ", smallest_statecity)
+
+  conn.commit()
+  conn.close()
+    
   
 def main():
-  city_name = 'northfield'
+  city_name = 'Northfield'
   location = get_location()
   if location:
     latitude, longitude = location
@@ -44,6 +64,7 @@ def main():
     print(f'{city_name} is not found in the database')
 
   largest_pop()
+  smallest_statecity()
     
 if __name__ =="__main__":
     main()
