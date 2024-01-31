@@ -21,13 +21,7 @@ def get_location():
   return result or False
 
 def largest_pop():
-  conn = psycopg2.connect(
-    host="localhost",
-    port=5432,
-    database="feutsopm",
-    user="feutsopm",
-    password="java255expo")
-  
+  conn = connection_info()
   curr = conn.cursor()
   curr.execute("SELECT city FROM cities ORDER BY population DESC LIMIT 1")
   result = curr.fetchone()
@@ -39,13 +33,7 @@ def largest_pop():
   conn.close()
 
 def smallest_sate_city():
-  conn = psycopg2.connect(
-    host="localhost",
-    port=5432,
-    database="feutsopm",
-    user="feutsopm",
-    password="java255expo")
-
+  conn = connection_info()
   curr = conn.cursor()
   fstate = 'Minnesota'
   curr.execute("SELECT city FROM cities WHERE state= %s ORDER BY population ASC LIMIT 1", (fstate,))
@@ -58,13 +46,7 @@ def smallest_sate_city():
   conn.close()
 
 def get_extreme_cities():
-  conn = psycopg2.connect(
-    host="localhost",
-    port=5432,
-    database="feutsopm",
-    user="feutsopm",
-    password="java255expo")
-
+  conn = connection_info()
   curr= conn.cursor()
   sql = 'SELECT city, lat, lon FROM cities'
   curr.execute(sql)
@@ -95,13 +77,7 @@ def get_extreme_cities():
   conn.close
 
 def get_total_state_population():
-  conn = psycopg2.connect(
-    host="localhost",
-    port=5432,
-    database="feutsopm",
-    user="feutsopm",
-    password="java255expo")
-
+  conn = connection_info()
   curr = conn.cursor()
   state_in = str(input("Enter the state whose total population you want to check:"))
   if len(state_in) == 2:
