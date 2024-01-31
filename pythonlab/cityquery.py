@@ -25,9 +25,7 @@ def largest_pop():
     password="java255expo")
   
   curr = conn.cursor()
-  curr.execute("SELECT MAX(population) FROM cities")
-  result = curr.fetchone()
-  curr.execute("SELECT city from cities WHERE population = %s", result)
+  curr.execute("SELECT city FROM cities ORDER BY population DESC LIMIT 1")
   result = curr.fetchone()
   conn.commit()
   conn.close()
