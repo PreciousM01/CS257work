@@ -64,7 +64,7 @@ def main():
     print(f'{city_name} is not found in the database')
 
   largest_pop()
-  smallest_statecity()
+  smallest_state_city()
     
 if __name__ =="__main__":
     main()
