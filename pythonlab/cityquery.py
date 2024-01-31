@@ -6,7 +6,9 @@ def connection_info():
     port=5432,
     database="feutsopm",
     user="feutsopm",
-    password="java255expo")
+    password="java255expo"
+  )
+  return conn
 
 def get_location():
   conn = connection_info()
