@@ -99,7 +99,7 @@ def get_total_state_population():
     password="java255expo")
 
   curr = conn.cursor()
-  state_in = input("Enter the state whose total population you want to check")
+  state_in = str(input("Enter the state whose total population you want to check"))
   if len(state_in) == 2:
     curr.execute("SELECT state FROM states WHERE abbreviation= %s", (state_in))
     state_in = curr.fetchone()
