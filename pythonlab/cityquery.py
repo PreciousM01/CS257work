@@ -111,7 +111,7 @@ def get_total_state_population():
     name, population = city
     total_pop += city[1]
 
-  print(f"The total population in {state_in} is {total_pop}")
+  print(f"The total population is {total_pop} in ", state_in)
   conn.commit()
   conn.close()
     
