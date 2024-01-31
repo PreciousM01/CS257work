@@ -27,9 +27,12 @@ def largest_pop():
   curr = conn.cursor()
   curr.execute("SELECT city FROM cities ORDER BY population DESC LIMIT 1")
   result = curr.fetchone()
+  if(result):
+    largest_city = result[0]
+    print("The city with the largest population is:", largest_city)
+    
   conn.commit()
   conn.close()
-  return result
   
 def main():
   city_name = 'northfield'
