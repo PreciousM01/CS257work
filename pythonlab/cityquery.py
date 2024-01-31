@@ -15,6 +15,23 @@ def get_location():
   conn.commit()
   conn.close()
   return result or False
+
+def largest_pop():
+  conn = psycopg2.connect(
+    host="localhost",
+    port=5432,
+    database="feutsopm",
+    user="feutsopm",
+    password="java255expo")
+  
+  curr = conn.cursor()
+  curr.execute("SELECT MAX(population) FROM cities")
+  result = curr.fetchone()
+  curr.execute("SELECT city from cities WHERE population = %s", result)
+  result = curr.fetchone()
+  conn.commit()
+  conn.close()
+  return result
   
 def main():
   city_name = 'northfield'
@@ -24,6 +41,8 @@ def main():
     print(f'The location of {city_name} is latitude: {latitude} and longitude: {longitude}')
   else:
     print(f'{city_name} is not found in the database')
+
+  print(largest_pop() " has the largest population")
     
 if __name__ =="__main__":
     main()
