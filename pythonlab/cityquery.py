@@ -1,6 +1,6 @@
 import psycopg2
 
-def get_location():
+def connection_info():
   conn = psycopg2.connect(
     host="localhost",
     port=5432,
@@ -8,6 +8,8 @@ def get_location():
     user="feutsopm",
     password="java255expo")
 
+def get_location():
+  conn = connection_info()
   curr = conn.cursor()
   city_name = 'northfield'
   curr.execute("SELECT lat, lon FROM cities WHERE city = %s", (city_name,))
@@ -111,7 +113,7 @@ def get_total_state_population():
     name, population = city
     total_pop += city[1]
 
-  print(f"The total population is {total_pop} in ", state_in)
+  print(f'The total population is {total_pop} in ', state_in)
   conn.commit()
   conn.close()
     
