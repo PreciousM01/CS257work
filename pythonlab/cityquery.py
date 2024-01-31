@@ -89,6 +89,32 @@ def get_extreme_cities():
   
   conn.commit()
   conn.close
+
+def get_total_state_population():
+  conn = psycopg2.connect(
+    host="localhost",
+    port=5432,
+    database="feutsopm",
+    user="feutsopm",
+    password="java255expo")
+
+  curr = conn.cursor()
+  state_in = input("Enter the state whose total population you want to check")
+  if len(state_in) == 2:
+    curr.execute("SELECT state FROM states WHERE abbreviation= %s", (state_in))
+    state_in = curr.fetchone()
+
+  curr.execute("SELECT city, population FROM cities WHERE state = %s", (state_in,))
+  cities = curr.fetchall()
+  total_pop = 0
+  for city in cities:
+    name, population = city
+    total_pop += city[1]
+
+  print("The total population in", state_in ,"is :", total_pop)
+  conn.commit()
+  conn.close()
+    
   
 def main():
   city_name = 'Northfield'
@@ -102,6 +128,7 @@ def main():
   largest_pop()
   smallest_sate_city()
   get_extreme_cities()
+  get_total_state_population()
     
 if __name__ =="__main__":
     main()
