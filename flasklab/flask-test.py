@@ -36,7 +36,7 @@ def get_statepop(abbr):
     curr = conn.cursor()
     sql= 'SELECT state_population FROM states2 WHERE code = %s'
     curr.execute(sql, (abbr))
-    statepop = curr.fetchone()
+    statepop = str(curr.fetchone())
     print("The population of " + abbr + "is: ", statepop)
     conn.commit()
     conn.close()
