@@ -36,6 +36,12 @@ def connection_info():
 def get_statepop(abbr):
     conn = conection_info()
     curr = conn.cursor()
+    sql= 'SELECT state_population FROM states2 WHERE code = %s'
+    curr.execute(sql, (abbr))
+    statepop = curr.fetchone()
+    print("The population of " + abbr + "is: ", statepop)
+    conn.commit()
+    conn.close()
     
 
 if __name__ == '__main__':
