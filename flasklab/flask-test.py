@@ -1,4 +1,5 @@
 import flask
+import psycopg2
 
 app = flask.Flask(__name__)
 
@@ -20,6 +21,22 @@ def my_color(word1):
 def my_addition(number1, number2):
     sum = int(number1) + int(number2)
     return str(sum)
+
+def connection_info():
+  conn = psycopg2.connect(
+    host="localhost",
+    port=5432,
+    database="feutsopm",
+    user="feutsopm",
+    password="java255expo"
+  )
+  return conn
+    
+@app.route('/pop/<abbr>')
+def get_statepop(abbr):
+    conn = conection_info()
+    curr = conn.cursor()
+    
 
 if __name__ == '__main__':
     my_port = 5125
