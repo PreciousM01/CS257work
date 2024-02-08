@@ -40,6 +40,7 @@ def get_statepop(abbr):
     print("The population of " + abbr + "is: ", statepop)
     conn.commit()
     conn.close()
+    return statepop
     
 
 if __name__ == '__main__':
