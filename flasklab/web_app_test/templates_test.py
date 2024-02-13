@@ -29,4 +29,11 @@ def display_sentence():
   selected_adjective = ramdom.choice(adjective_list)
   selected_year = random.randint(1924,2024)
 
+  conn.commit()
+  conn.close()
+  
   return render_template("random.html", selected_name, selected_adjective, selected_city, selected_year)
+
+if __name__ == 'main':
+  my_port = 5125
+  app.run(host='0.0.0.0', port = my_port)
