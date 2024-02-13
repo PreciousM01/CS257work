@@ -3,7 +3,7 @@ from flask import render_template
 import random
 import psycopg2
 
-app = Flaks(__name__)
+app = Flask(__name__)
 
 @app.rout('/')
 def welcome():
