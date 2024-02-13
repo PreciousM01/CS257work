@@ -19,7 +19,7 @@ def display_sentence():
   password="java255expo"
   )
 
-  curr = cursor.connect()
+  curr = conn.cursor()
   city_list = curr.execute("SELECT city FROM cities")
   name_list = ['Jasmine', 'Sam', 'Liz', 'Talia', 'Cecilia', 'Amanda']
   adjective_list = ['Beautiful', 'Sage', 'Brave', 'Wise', 'Curious']
