@@ -5,7 +5,7 @@ import psycopg2
 
 app = Flask(__name__)
 
-@app.rout('/')
+@app.route('/')
 def welcome():
   return render_template("index.html")
 
