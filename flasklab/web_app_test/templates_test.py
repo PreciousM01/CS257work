@@ -29,7 +29,7 @@ def display_sentence():
 
   selected_city = random.choice(city_list)
   selected_name = random.choice(name_list)
-  selected_adjective = ramdom.choice(adjective_list)
+  selected_adjective = random.choice(adjective_list)
   selected_year = random.randint(1924,2024)
 
   conn.commit()
