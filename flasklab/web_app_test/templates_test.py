@@ -20,7 +20,10 @@ def display_sentence():
   )
 
   curr = conn.cursor()
-  city_list = curr.execute("SELECT city FROM cities")
+  curr.execute("SELECT city FROM cities")
+  city_rows = curr.fetchall()
+  city_list = [row[0] for row in city_rows]
+  
   name_list = ['Jasmine', 'Sam', 'Liz', 'Talia', 'Cecilia', 'Amanda']
   adjective_list = ['Beautiful', 'Sage', 'Brave', 'Wise', 'Curious']
 
