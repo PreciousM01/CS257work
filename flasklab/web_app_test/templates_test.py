@@ -34,6 +34,6 @@ def display_sentence():
   
   return render_template("random.html", selected_name, selected_adjective, selected_city, selected_year)
 
-if __name__ == 'main':
+if __name__ == '__main__':
   my_port = 5125
   app.run(host='0.0.0.0', port = my_port)
