@@ -35,7 +35,7 @@ def display_sentence():
   conn.commit()
   conn.close()
   
-  return render_template("random.html", selected_name, selected_adjective, selected_city, selected_year)
+  return render_template("random.html", name = selected_name, adjective = selcted_adjective, city = selected_city, year = selected_year)
 
 if __name__ == '__main__':
   my_port = 5125
