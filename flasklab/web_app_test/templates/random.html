@@ -11,9 +11,13 @@
         color: teal;
         font-size:50px;
         font-weight:30px;
+        margin: 20px;
       }
       p {
         font-size: 30px;
+      }
+      press_button {
+        display: inline flex;
       }
     </style>
   </head>
@@ -21,5 +25,11 @@
     <h1>Generating a Random Sentence</h1>
     <p>How about this:</p>
     <p>{{name}} the {{adjective}} was born in {{city}} in the year {{year}}</p>
+    <div class="press_button">
+      <a href="/rand">Another Sentence</a>
+    </div>
+    <div class="press_button">
+      <a href="/">Back to main page</a>
+    </div>
   </body>
 </html>
