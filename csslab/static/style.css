@@ -19,16 +19,20 @@ text-align: center;
   font-weight: 300;
   letter-spacing: 3.7px;
 }
+p, .banner-contents {
+  max-width: 80%;
+  margin: auto;
+}
 .about {
   background-color: #f0f0f0;
   width: 50%;
-  margin: 20px;
+  margin: 20px 20px 20px 100px;
+  
 }
 .text {
-
+font-size: 25px;
 }
 .grid {
-  width: 75%;
   display: grid;
   grid-template: 150px/ repeat(6,1fr);
   gap:20px;
