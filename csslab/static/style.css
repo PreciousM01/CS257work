@@ -3,4 +3,10 @@ background-color: #fcfcfc;
 color: #db6363;
 text-align: center;
 }
-
+.title {
+  margin: auto;
+  color: #dc6363;
+  font-family: Poppins;
+  font-size: 2em;
+  font-weight: 700;
+}
