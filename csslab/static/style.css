@@ -10,3 +10,38 @@ text-align: center;
   font-size: 2em;
   font-weight: 700;
 }
+.banner {
+  padding: 3%;
+  background-color: #db6363;
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 3em;
+  font-weight: 300;
+  letter-spacing: 3.7px;
+}
+.about {
+  background-color: #f0f0f0;
+}
+.box {
+  background-color: #2f2f2f;
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: center;
+  display: grid;
+}
+.address {
+grid-column: 1 / span 2;
+}
+
+.hours {
+grid-column: 3/ span 2;
+}
+
+.call-us {
+  grid-column: 5/ span 2;
+}
+
+  
