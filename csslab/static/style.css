@@ -21,14 +21,16 @@ text-align: center;
 }
 .about {
   background-color: #f0f0f0;
-}
-.text {
-  width: 70px;
+  width: 50%;
   margin: 20px;
 }
+.text {
+
+}
 .grid {
+  width: 75%;
   display: grid;
-  grid-template: 150px/ repeat(7,1fr);
+  grid-template: 150px/ repeat(6,1fr);
   gap:20px;
 }
 .box {
