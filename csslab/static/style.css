@@ -31,8 +31,8 @@ p, .banner-contents {
   padding: 20px;
 }
 .text {
-  font-size: 35px;
-  line-height: 40px;
+  font-size: 30px;
+  line-height: 35px;
 }
 .grid {
   display: grid;
@@ -72,6 +72,17 @@ footer {
   margin: 20px;
   line-height: 30px;
 }
-#pet_name {
+.appointment_title {
+  font-size: 25px;
+  font-weight: 50px;
+  margin: 20px;
+}
+#contact {
+  margin-left: 10px;
+}
+#email {
+  margin-left: 10px
+}
+.pet {
   margin: 30px;
 }
