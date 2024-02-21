@@ -20,7 +20,7 @@ text-align: center;
   letter-spacing: 3.7px;
 }
 p, .banner-contents {
-  max-width: 80%;
+  width: 60%;
   margin: auto;
 }
 .about {
@@ -52,7 +52,7 @@ grid-column: 1 / span 2;
 }
 
 .hours {
-grid-column: 3/ span 2;
+grid-column: 3/ span 1;
 }
 
 .call-us {
