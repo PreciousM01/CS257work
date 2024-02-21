@@ -7,7 +7,7 @@ text-align: center;
   margin: 20px;
   color: #dc6363;
   font-family: Poppins;
-  font-size: 4em;
+  font-size: 2em;
   font-weight: 700;
 }
 .banner {
@@ -32,12 +32,12 @@ p, .banner-contents {
 }
 .text {
   font-size: 35px;
-  line-height: 5px;
+  line-height: 25px;
 }
 .grid {
   display: grid;
-  grid-template: 150px/ repeat(6,1fr);
-  gap:20px;
+  grid-template: 150px/ repeat(3,1fr);
+  gap:50px;
 }
 .box {
   background-color: #2f2f2f;
@@ -50,15 +50,15 @@ p, .banner-contents {
   display: grid;
 }
 .address {
-grid-column: 1 / span 1;
+grid-column: 1;
 }
 
 .hours {
-grid-column: 3/ span 1;
+grid-column: 2;
 }
 
 .call-us {
-  grid-column: 5/ span 1;
+  grid-column: 3;
 }
 footer {
   background-color: #db6363;
