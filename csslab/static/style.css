@@ -28,7 +28,8 @@ p, .banner-contents {
   font-size: 40px;
 }
 p {
-  font-size: 22px;
+  font-size: 30px;
+  font-weight: 30px;
 }
 .about {
   background-color: #f0f0f0;
@@ -92,8 +93,8 @@ footer {
   margin-left: 30px;
 }
 .pet {
-  margin: 30px 30px 30px 300px;
+  margin: 30px 30px 20px 300px;
 }
-.button p{
+button p{
   font-size: 22px;
 }
