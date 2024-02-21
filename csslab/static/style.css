@@ -25,11 +25,11 @@ p, .banner-contents {
   margin: auto;
 }
 .banner-contents p {
-  font-size: 40px;
+  font-size: 60px;
+  font-weight: 30px;
 }
 p {
-  font-size: 30px;
-  font-weight: 30px;
+  font-size: 22px;
 }
 .about {
   background-color: #f0f0f0;
@@ -96,5 +96,5 @@ footer {
   margin: 30px 30px 20px 300px;
 }
 button p{
-  font-size: 22px;
+  font-size: 25px;
 }
