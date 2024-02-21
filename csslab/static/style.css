@@ -38,6 +38,7 @@ p, .banner-contents {
   display: grid;
   grid-template: 150px/ repeat(3,1fr);
   gap:50px;
+  margin: 30px;
 }
 .box {
   background-color: #2f2f2f;
@@ -74,15 +75,15 @@ footer {
 }
 .appointment_title {
   font-size: 25px;
-  font-weight: 50px;
+  font-weight: 80px;
   margin: 20px;
 }
 #contact {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 #email {
-  margin-left: 10px
+  margin-left: 15px;
 }
 .pet {
-  margin: 30px;
+  margin: 50px;
 }
