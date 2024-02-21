@@ -24,6 +24,9 @@ p, .banner-contents {
   width: 60%;
   margin: auto;
 }
+p {
+  font-size: 22px;
+}
 .about {
   background-color: #f0f0f0;
   width: 50%;
@@ -77,13 +80,15 @@ footer {
   font-size: 25px;
   font-weight: 50px;
   margin: 20px;
+  text-align: center;
 }
 #contact {
-  margin-left: 18px;
+  margin-left: 20px;
 }
 #email {
-  margin-left: 20px;
+  margin-left: 25px;
 }
 .pet {
   margin: 50px;
+  text-align: center;
 }
