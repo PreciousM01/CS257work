@@ -23,6 +23,8 @@ text-align: center;
 p, .banner-contents {
   width: 60%;
   margin: auto;
+}
+.banner-contents p {
   font-size: 40px;
 }
 p {
@@ -80,7 +82,7 @@ footer {
 .appointment_title {
   font-size: 25px;
   font-weight: 50px;
-  margin: 50px 50px 50px 300px;
+  margin: 50px 50px 10px 300px;
   text-align: center;
 }
 #contact {
@@ -90,5 +92,8 @@ footer {
   margin-left: 30px;
 }
 .pet {
-  margin: 50px 50px 50px 300px;
+  margin: 30px 30px 30px 300px;
+}
+.button p{
+  font-size: 22px;
 }
