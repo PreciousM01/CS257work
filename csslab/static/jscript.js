@@ -9,5 +9,5 @@ function generateAppointment(){
   email = email-input.value();
   pet-name-input = document.getElementById("pet_name");
   pet-name = pet-name-input.value();
-  document.getElementById("your_appointment").innerHTML = "Thanks for making an appointment with PupSpa" + first-name + "." + pet-name + " is the king and we are its servants!"
+  document.getElementById("your_appointment").innerHTML = "Thanks for making an appointment with PupSpa" + first-name + "." + pet-name + " is the king and we are its servants!";
 }
