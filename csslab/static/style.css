@@ -4,7 +4,7 @@ color: #db6363;
 text-align: center;
 }
 .title {
-  margin: 20px;
+  margin: 10px;
   color: #dc6363;
   font-family: Poppins;
   font-size: 2em;
@@ -28,11 +28,11 @@ p, .banner-contents {
   background-color: #f0f0f0;
   width: 50%;
   margin: 20px 20px 20px 300px;
-  
+  padding: 20px;
 }
 .text {
   font-size: 35px;
-  line-height: 25px;
+  line-height: 40px;
 }
 .grid {
   display: grid;
@@ -68,4 +68,10 @@ footer {
   letter-spacing: 0.4px;
   display: grid;
 }
-  
+.appointment {
+  margin: 20px;
+  line-height: 30px;
+}
+#pet_name {
+  margin: 30px;
+}
