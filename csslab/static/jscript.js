@@ -18,6 +18,10 @@ function shrinkBox() {
   for (let box of boxes) {
     box.addEventListener('mouseover', () => {
       box.style.backgroundColor = 'slategray';
+      box.style.color = '#db6363';
+      box.style.heigth = '100px';
+      box.style.width = '200px';
+      box.style.fontSize = '18px';
     });
     
     box.addEventListener('mouseout', () => {
