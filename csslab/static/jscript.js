@@ -12,13 +12,18 @@ function generateAppointment(){
   document.getElementById("your_appointment").innerHTML = "Thanks for making an appointment with PupSpa " + firstName + " :-) " + petName + " is the king and we are its servants!";
 }
 
-function shrinkBox(){
-  const box = document.getElementsByClassName("box");
-  box.addEventListener('mouseover', () => {
-  box.style.backgroundcolor = 'slategray'  
-  })
-  box.addEventListener('mouseout', () => {
-  box.style.backgroundcolor = ''  
-  })
+function shrinkBox() {
+  const boxes = document.getElementsByClassName("box");
+  
+  for (let box of boxes) {
+    box.addEventListener('mouseover', () => {
+      box.style.backgroundColor = 'slategray';
+    });
+    
+    box.addEventListener('mouseout', () => {
+      box.style.backgroundColor = '';
+    });
+  }
 }
+
   
